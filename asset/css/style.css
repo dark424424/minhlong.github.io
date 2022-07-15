@@ -77,6 +77,8 @@
     cursor: pointer;
     border: none;
     text-align: center;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .btn:hover {
