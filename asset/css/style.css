@@ -64,6 +64,10 @@
     margin-top: 16px !important;
 }
 
+.mt-32{
+    margin-top: 32px !important;
+}
+
 .btn{
     color: #fff;
     background-color: #000;
@@ -72,6 +76,7 @@
     display: inline-block;
     cursor: pointer;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -95,9 +100,9 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#main{
+/* #main{
 
-}
+} */
 
 #header{
     height: 46px;
@@ -107,6 +112,7 @@ html {
     left: 0;
     right: 0;
     z-index: 3;
+    
 }
 #nav {
     display: inline-block;
@@ -119,7 +125,7 @@ html {
     display: block;
 }
 
-#nav li::before {
+#nav>li::before  {
     content: "";
     display: block;
     height: 5px;
@@ -130,7 +136,7 @@ html {
     transition: all ease-in-out 250ms;
 }
 
-#nav li:hover::before{
+#nav>li:hover::before{
     width: 100%;
 }
 
@@ -187,16 +193,35 @@ min-height: 500px;
 background-color: #ccc;
 }
 
+#header .menu-mobile,
 #header .search-btn{
     float: right;
     padding: 0 21px;
+
 }
+
+
 #header .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
 
 }
+#header .menu-mobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
+#header .menu-mobile:hover{
+    background-color: #ccc;
+}
+
+#header .menu-mobile:hover .menu-icon{
+    color: #000;
+}
+
+#header .menu-mobile,
 #header .search-icon{
     font-size: 20px;
     color: #fff;
@@ -206,7 +231,7 @@ background-color: #ccc;
 #slider{
     margin-top: 46px;
     padding-top: 50%;
-    background-image: url('/asset/img/Slider/Slider1.jpg');
+    background-image: url('/WebF8/asset/img/Slider/Slider1.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -235,16 +260,19 @@ background-color: #ccc;
 
 }
 
-
+/* 
 #content{
 
-}
+} */
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0px 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 
@@ -271,7 +299,7 @@ background-color: #ccc;
 }
 
 #content .members-list{
-    margin-top: 48px;
+    margin-top: 32px;
 
 }
 
@@ -328,7 +356,7 @@ background-color: #ccc;
 
 
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 
@@ -387,6 +415,15 @@ background-color: #ccc;
     font-size: 18px;
     line-height: 1.4;
     line-height: 27px;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.6;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
@@ -551,4 +588,14 @@ label.modal-label {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Mobile */
+@media only screen and (max-width:46.1875em) {
+
+}
+
+/* Responsive tablet */
+@media only screen and (min-width:46.25em) and (max-width:63.9375em) {
+
 }

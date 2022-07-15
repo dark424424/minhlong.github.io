@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link rel="icon" href="https://forum.dream.ms/styles/uix_dark/images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="asset/css/style.css">
-    
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="asset/fonts/themify-icons/themify-icons.css">
     <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" integrity="sha512-BWbLJlfp8hzXlxT6K5KLdxPVAj+4Zn2e4FVq5P7NSFH/mkAJ18UiZRQUD4anR3jyp0/WYkeZ0Zmq5EWWrDxneQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -25,7 +25,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i> 
                     </a>
@@ -42,6 +42,10 @@
                 <i class="search-icon ti-search"></i>
             </div>
             <!-- End:search -->
+            <div id="mobile-menu" class="menu-mobile">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
 
         </div>
 
@@ -62,26 +66,27 @@
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="members-list">
-                    <div class="text-center col col-three">
+                <div class="row members-list">
+                    <div class="s-col-full mt-32 text-center col col-three">
+                        <p class="member-name">Name</p>
+                        <img src="./asset/img/Member/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                
+                <!-- <div class="members-list"> -->
+                    <div class="s-col-full mt-32 text-center col col-three">
+                        <p class="member-name">Name</p>
+                        <img src="./asset/img/Member/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                <!-- </div>     -->
+                <!-- <div class="members-list"> -->
+                    <div class="s-col-full mt-32 text-center col col-three">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/Member/bandmember.jpg" alt="" class="member-img">
                     </div>
                 </div>
-                <div class="members-list">
-                    <div class="text-center col col-three">
-                        <p class="member-name">Name</p>
-                        <img src="./asset/img/Member/bandmember.jpg" alt="" class="member-img">
-                    </div>
-                </div>    
-                <div class="members-list">
-                    <div class="text-center col col-three">
-                        <p class="member-name">Name</p>
-                        <img src="./asset/img/Member/bandmember.jpg" alt="" class="member-img">
-                    </div>
-                </div>
+                <!-- </div> -->
                 <div class="clear"></div>
-            
+                    
             </div>
 
             <!-- Tour section-->
@@ -97,31 +102,31 @@
                     </ul>
                     <!-- Place -->
                     <div class="row places-list">
-                        <div class="col col-three">
-                            <img src="/asset/img/Place/newyork.jpg" alt="NewYork" class="place-img">
+                        <div class="col col-three s-col-full mt-16">
+                            <img src="./asset/img/Place/newyork.jpg" alt="NewYork" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-three">
-                            <img src="/asset/img/Place/paris.jpg" alt="Paris" class="place-img">
+                        <div class="col col-three s-col-full mt-16">
+                            <img src="./asset/img/Place/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-three">
-                            <img src="/asset/img/Place/sanfran.jpg" alt="San Francisco" class="place-img">
+                        <div class="col col-three s-col-full mt-16">
+                            <img src="./asset/img/Place/sanfran.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -134,18 +139,18 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-subheading">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half contact-info s-col-full">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:Long@mail.com">Long@mail.com</a</p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <di v class="col col-half contact-form s-col-full">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                                 
@@ -156,9 +161,9 @@
                                 </div>
                             </div>
 
-                            <input class="btn mt-16 right" type="submit" value="SEND">
+                            <input class="btn mt-16 right s-full-width" type="submit" value="SEND">
                         </form>  
-                    </div>
+                    </di>
                 </div>
 
             </div>
@@ -222,6 +227,40 @@
         const modal = document.querySelector('.js-modal')
         const modalcontainer = document.querySelector('.js-modal-container')
         const closeBtn = document.querySelector('.js-modal-close')
+        var header =document.getElementById('header');
+        var mobileMenu =document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        console.log(header); 
+        console.log(mobileMenu);
+        
+        // Dong mo mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+
+        }
+
+        // Tu dong dong khi chon trong Menu-mobile
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i=0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function () {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                } else{
+                    header.style.height = null;
+                }
+            }
+        }
+
 
         //Ham hien thi modal mua ve (add/remove class open vao modal)
         function showBuyTicket() {
@@ -244,6 +283,10 @@
         modalcontainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+
+
+
+
     </script>
 </body>
 </html>
